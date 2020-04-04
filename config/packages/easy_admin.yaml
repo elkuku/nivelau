@@ -4,11 +4,9 @@ easy_admin:
     design:
         menu:
             - { route: 'default', label: 'Main site', icon: 'home' }
-            - { entity: 'Answer', label: 'Preguntas', icon: 'map-marker' }
-            - { entity: 'Question', label: 'Respuestas', icon: 'comments' }
+            - { entity: 'Question', label: 'Preguntas', icon: 'map-marker' }
+            - { entity: 'Answer', label: 'Respuestas', icon: 'comments' }
 
     entities:
-#        # List the entity class name you want to manage
         - App\Entity\Answer
         - App\Entity\Question
-#        - App\Entity\User
