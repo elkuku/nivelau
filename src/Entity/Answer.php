@@ -13,8 +13,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *
  * @ApiResource(
  *     collectionOperations={"get"={"normalization_context"={"groups"="answer:list"}}},
- *     itemOperations={"get"={"normalization_context"={"groups"="answer:item"}}},
- *     order={"id"="ASC"},
+ *     itemOperations={"get"},
  *      paginationEnabled=false
  * )
  *
@@ -44,7 +43,7 @@ class Answer
 
     public function __toString()
     {
-        return substr($this->text, 0, 20).'...';
+        return substr($this->text, 0, 25).'...';
     }
 
     public function getId(): ?int
